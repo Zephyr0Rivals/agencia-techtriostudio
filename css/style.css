@@ -1,0 +1,951 @@
+
+/*
+========================
+FONTES GOOGLE E LOCAL
+========================
+*/
+
+/* GOOGLE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*
+============================
+VARIÁVEIS TECH TRIO STUDIO
+============================
+*/
+
+:root{
+    /* CORES */
+    --cor-fundo1: #008f8C;
+    --cor-fundo-2: #0fc2c0;
+    --cor-primaria: #0CABA8;
+    --cor-secundaria-1:#015958;
+    --cor-secundaria-2: #023535;
+    --cor-destaque: #008f8C;
+
+    --cor-texto: #2e2e2e;
+    --cor-titulo: #023535;
+    --cor-subtitulo: #015958;
+
+    /* FONTES */
+    --fonte-titulo: "Poppins", sans-serif;
+    --fonte-texto: "Roboto", sans-serif;
+}
+
+h2{ font-family: var(--fonte-titulo);
+    font-size: 50px;
+    color: var(--cor-titulo);
+    font-weight: bold;
+}
+
+h3{
+    font-family: var(--fonte-texto);
+    color: var(--cor-secundaria-1);
+    font-size: 40px;
+}
+
+p{
+    font-family: var(--fonte-texto);
+    color: var(--cor-texto);
+    font-size: 25px;
+}
+
+
+body{
+background-color: var(--cor-primaria);
+}
+.site{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+ 
+}
+
+
+/* TOPO */
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-fundo1);
+    height: 230px;
+    
+}
+
+.topo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.topo ul{
+    display: flex;
+    gap: 60px;
+    font-size: 30px;
+}
+
+/* LOGO */
+.topo h1 {
+    width: 300px;
+    height: 240px;
+    background-image: url(../assets/logo.img.png);
+    background-size: cover; 
+    margin: 20px;
+    text-indent: -9999px;
+}
+
+
+
+
+/* MENU */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-family: var(--fonte-titulo);
+}
+
+.menu ul {
+    display: flex;
+    order: 0;
+}
+
+.menu ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor-titulo);
+}
+
+.menu ul li a:hover {
+    color: var(--cor-fundo-2);
+}
+
+/* REDE SOCIAIS */
+.redeSociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.redeSociais li{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria-1);
+    border-radius: 50px;
+
+     /*animar para deixar suave*/
+   transition: transform 0.25s ease,
+    background-color 1s ease,
+    box-shadow 0.25s ease;
+}
+
+.redeSociais li:hover{
+    background-color: var(--cor-fundo-2);
+    transform: translateY(-3px) scale(1.12);
+    /*box-shadow: X Y Desfoque Cor*/
+    box-shadow: 0 5px 10px var(--cor-primaria);
+}
+
+.menu .redeSociais a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 30px;
+}
+
+.redeSociais img{
+    width: 18px;
+    display: block;
+    margin: 0 5px;
+}
+
+/* BANNER */
+.banner img {
+    width: 100%;
+}
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+    font-size: 30px;
+    color: white;
+
+}
+
+.banner .slick-prev {
+    left: 25px;
+    z-index: 1;
+}
+
+.banner .slick-next {
+    right: 25px;
+}
+
+
+/* FIM BANNER */
+
+/* SOBRE */
+ .sobre-geral{
+    display: flex;
+     flex-direction: row-reverse; /* troca os lados */
+    max-width: 1200px;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+   
+ }
+
+.sobre .div{
+    display: flex;
+    justify-content: space-between; /* joga um pra cada lado */
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+
+}
+
+.sobre-texto{
+    max-width: 600px;
+}
+
+.sobre-img img{
+    width: 490px;
+    height: 360px;
+    object-fit: cover;
+}
+
+
+.sobre h3 {
+    color: var(--cor-titulo);
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+    margin: 30px 0 0 ;
+    text-align: center;
+}
+
+
+.sobre p {
+    color: var(--cor-texto);
+    font-size: 25px;
+    font-family: var(--fonte-texto);
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* FIM SOBRE */
+
+/* LINHA TEMPO */
+.secao-linha-tempo header h3{
+    text-align: center;
+    color: var(--cor-titulo);
+    margin: 40px 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.linha-tempo {
+    width: 100%;
+    max-width: 1500px; /* largura máxima */
+    height: 532px;
+    padding: 20px;
+    margin: 0 auto; /* CENTRALIZA */
+    position: relative;
+    box-sizing: border-box;
+    
+    --altura-card-linha-tempo: 205px;
+    --distancia-linha-tempo: 42px;
+
+
+    display: flex;
+    justify-content: center; /* centraliza os cards */
+    /* gap: 50px;  espaço igual entre eles */
+}
+.titulo-linha-tempo h4 {
+  font-size: 20px;
+  font-family: var(--fonte-titulo);
+  margin: 15px 0;
+  font-weight: bold;
+  text-align: center;
+  color: var(--cor-titulo); 
+}
+
+.titulo-linha-tempo p{
+    font-size: 15px;
+    text-align: center;
+    color: var(--cor-destaque);
+}
+.item-linha-tempo {
+    max-width: 300px;
+    height: var(--altura-card-linha-tempo);
+    
+
+    flex-shrink: 0;
+    flex-grow: 0;
+    align-self: flex-start;
+    position: relative;
+
+    background: #FFF;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.6);
+}
+
+.linha-tempo::before{
+    content: "";
+    background: #fff;
+
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.item-linha-tempo::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #FFF;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}   
+
+
+.item-linha-tempo::after {
+  position: absolute;
+  width: 4px;
+  height: var(--distancia-linha-tempo);
+  top: 92%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFF;
+  content: "";
+}
+
+.periodo-linha-tempo {
+  position: absolute;
+  top: calc(100% + var(--distancia-linha-tempo) - 19px);
+  background: #FFF;
+  padding: 10px;
+  width: 50px;
+  border-radius: 10px;
+  left: calc(50%);
+  box-shadow: 0px 0px 2px 2px rgba(0,0,0, 0.2);
+
+  transform: translateX(-50%);
+
+  font-family: var(--fonte-titulo);
+  text-align:center;
+  font-size: 15px;
+}
+/*.periodo-linha-tempo:before {
+  width: 15px;
+  height: 15px;
+  background: #FFF;
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: calc(50%);
+    transform: translateX(-50%) rotate(45deg);
+  z-index: 2;
+} */
+
+/* cards de baixo */
+.item-linha-tempo:nth-child(even) {
+  align-self: flex-end;
+  /* ↓ controla a proximidade dos pares de baixo, com os ímpares */
+  
+  
+}
+/* losango */
+.item-linha-tempo:nth-child(even)::before {
+    top: 0px;
+     
+}
+.item-linha-tempo:nth-child(even)::after {
+    top: auto;
+    bottom: 92%;
+}
+.item-linha-tempo:nth-child(even) .periodo-linha-tempo {
+  top: auto;
+  bottom: calc(100% + var(--distancia-linha-tempo) - 19px);
+}
+
+/* FINAL LINHA TEMPO */
+
+/* Começo de Equipe */
+.equipe header h2 {
+    text-align: center;
+    margin: 50px 0;
+    font-weight: normal;
+}
+
+.cards-equipe{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.card-main,
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    transition: width 0.3s ease-in-out,
+                height 0.3s ease-in-out,
+                box-shadow 0.3s ease-in-out;
+}
+
+.card-main img{
+    width: 450px;
+    height: 333px;
+    object-fit: cover;
+}
+
+.card:hover img {
+    width: 450px;
+    height: 333px;
+    box-shadow: 0px 10px 20px rgba(0,0,0, 0.7);
+}
+
+.card-main h3,
+.card h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-main h3{
+    width: 450px;
+    height: 70px;
+    background-color: var(--cor-fundo-2);
+}
+
+.card h3{
+    width: 350px;
+    height: 70px;
+    background-color: var(--cor-fundo-2);
+    transition: width 0.3s ease-in-out;
+}
+
+.card:hover h3{
+    width: 450px;
+}
+
+.card{
+    align-items: center;
+}
+/* Final de Equipe */
+
+/* Começo Funcionamentos do Site */
+.funcionamentos header h3{
+    max-width: 1500px;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.funcional-todos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.funcionalidades{
+    display: flex;
+    
+    
+}
+
+.cards-funcio{
+    background-color: #008f8C;
+    width: 450px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.cards-funcio img{
+    width: 60px;
+    height: 60px;
+    margin-top: 22px;
+    filter: brightness(0) invert(1);
+}
+
+.cards-funcio h4{
+    font-family: var(--fonte-titulo);
+    font-size: 35px;
+    color: var(--cor-titulo);
+    margin: 30px 0;
+}
+
+.cards-funcio p{
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    color: var(--cor-texto);
+    text-align: center;
+}
+    
+
+
+/* Final Funcionamentos do Site */
+
+/* NOSSOS SERVIÇOS */
+
+.nossos-servicos{
+    max-width: 1500px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.nossos-servicos header h3{
+    color: var(--cor-secundaria-2);
+    font-size: 40px;
+    font-family: var(--fonte-titulo);
+    margin-bottom: 40px;
+}
+
+.nossos-servicos .coluna_de_servicos{
+    padding-top: 50px;
+    max-width: 1500px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 90px;
+}
+
+.nossos-servicos .coluna_de_servicos .coluna_singular{
+    max-width: 300px;
+    padding: 20px;
+    background-color: #008f8c;
+    border-radius: 30px;
+}
+
+.nossos-servicos .coluna_de_servicos .coluna_singular img{
+    margin-bottom: 20px;
+    width: 50px;
+    transition: transform 0.25s ease;
+    transform-origin: center;
+}
+
+.nossos-servicos .coluna_de_servicos .coluna_singular img:hover{
+    transform: translateY(-10px) scale(1.3);
+}
+
+.nossos-servicos .coluna_de_servicos .coluna_singular h3{
+    margin-bottom: 20px;
+    color: var(--cor-secundaria-2);
+}
+
+.nossos-servicos .coluna_de_servicos .coluna_singular p{
+   line-height: 0.9;
+}
+
+/* FIM SERVIÇOS */
+
+/* FAQ */
+
+.faq h3{
+    text-align: center;
+}
+
+.accordion-container{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.accordion-container .ac{
+    background-color: var(--cor-secundaria-1);
+    border-color: var(--cor-fundo-2);
+}
+
+.accordion-container .ac .ac-trigger,
+.accordion-container .ac .ac-trigger::after,
+.accordion-container .ac .ac-panel .ac-text{
+    color: #d2f0f1;
+}
+
+.accordion-container .ac .ac-trigger:focus,
+.accordion-container .ac .ac-trigger:hover{
+    color: var(--cor-primaria);
+}
+
+.formulario_de_contato{
+    max-width: 1500px;
+    padding-top: 50px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.formulario_de_contato h3{
+    text-align: center;
+    font-size: 30px;
+    color: var(--cor-titulo);
+}
+
+.container_form{
+    /* Limita a largura maxima do formulario para ele nao ficar largo demais */
+    max-width: 600px;
+    /* Centraliza o formulario dentro da secao */
+    margin: 0 auto;
+    /* Organiza os elementos internos em coluna */
+    display: flex;
+    /* Garante que os itens fiquem um abaixo do outro */
+    flex-direction: column;
+    /* Cria espaco entre os blocos internos do container */
+    gap: 20px;
+    /* Afasta o formulario do titulo "Entre em contato" */
+    padding-top: 25px;
+}
+
+.container_form form{
+    /* Organiza os campos do formulario em coluna */
+    display: flex;
+    /* Mantem cada grupo de campos um abaixo do outro */
+    flex-direction: column;
+    /* Define o espacamento entre os grupos do formulario */
+    gap: 10px;
+}
+
+.container_form input:not([type="checkbox"]){
+    /* Aplica este estilo em todos os inputs, exceto nos checkboxes */
+    /* Cria um espacamento interno menor, deixando o texto proximo da linha inferior */
+    padding: 0 0 5px 0;
+    /* Define o tamanho do texto digitado e dos placeholders */
+    font-size: 18px;
+    /* Remove a borda completa para tirar o bloco branco ao redor do campo */
+    border: none;
+    /* Cria apenas a linha inferior do campo */
+    border-bottom: 5px solid #023535;
+    /* Remove o arredondamento, ja que o campo agora e apenas uma linha */
+    border-radius: 5px;
+    /* Deixa o fundo transparente para aparecer somente a linha inferior */
+    background-color: #008f8c;
+    /* Usa a fonte padrao de texto definida nas variaveis */
+    font-family: var(--fonte-texto);
+    /* Faz os campos ocuparem toda a largura da coluna onde estao */
+    width: 100%;
+    /* Inclui padding e borda dentro dos 100% de largura, evitando estouro */
+    box-sizing: border-box;
+    /* Remove a linha padrao do navegador quando o campo esta selecionado */
+    outline: none;
+    
+}
+
+/* Define a cor do texto de exemplo dos inputs principais */
+.container_form input:not([type="checkbox"])::placeholder{
+    /* Aproxima a cor do placeholder do estilo mostrado na referencia */
+    color: var(--cor-secundaria-2);
+    font-family: var(--fonte-titulo);
+}
+
+.area_texto_form{
+    /* Faz a div da mensagem ocupar toda a largura disponivel do formulario */
+    width: 100%;
+}
+
+.area_texto_form textarea{
+    /* Faz a caixa de texto acompanhar a largura maxima do formulario */
+    width: 100%;
+    /* Define uma altura inicial mais confortavel para mensagens maiores */
+    min-height: 140px;
+    /* Cria espaco interno entre o texto digitado e as bordas */
+    padding: 0 0 5px 0;
+    /* Mantem o tamanho do texto igual aos outros campos do formulario */
+    font-size: 18px;
+    /* Remove a borda completa para tirar o bloco branco ao redor da mensagem */
+    border: none;
+    /* Cria apenas a linha inferior da area de mensagem */
+    border-bottom: 5px solid #023535;
+    /* Remove o arredondamento, ja que a textarea agora e apenas uma linha inferior */
+    border-radius: 5px;
+    /* Deixa o fundo transparente para aparecer somente a linha inferior */
+    background-color: #008f8c;
+    /* Usa a fonte padrao de texto definida nas variaveis */
+    font-family: var(--fonte-texto);
+    /* Inclui padding e borda dentro dos 100% de largura, evitando estouro */
+    box-sizing: border-box;
+    /* Permite aumentar/diminuir apenas a altura da textarea */
+    resize: vertical;
+    /* Remove pequenos espacos extras que elementos inline podem causar */
+    display: block;
+    /* Remove a linha padrao do navegador quando a area de mensagem esta selecionada */
+    outline: none;
+}
+
+/* Define a cor do texto de exemplo da area de mensagem */
+.area_texto_form textarea::placeholder{
+    /* Aproxima a cor do placeholder do estilo mostrado na referencia */
+    color: var(--cor-secundaria-2);
+    font-family: var(--fonte-titulo);
+}
+
+.nome_e_telefone,
+.email_e_outro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+}
+
+.area_checkbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.area_checkbox h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--cor-titulo);
+}
+
+.area_da_checkbox_centro{
+    display: flex;
+    justify-content: center;}
+
+.servicos_checkboxes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 75px;
+    align-items: center;
+    max-width: 330px;
+}
+
+.servicos_checkboxes input[type="checkbox"]{
+    /* Aumenta o tamanho dos checkboxes para facilitar a interação */
+    width: 20px;
+    height: 20px;
+}
+
+.servicos_checkboxes label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    
+}
+
+.botoes_form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    gap: 230px;
+    margin: 0 auto;
+}
+
+.botoes_form button{
+    /* Define um tamanho padrao para os botoes */
+    width: 100px;
+    height: 35px;
+
+    background-color: var(--cor-fundo1);
+    /* Define a cor do texto dos botoes como branco para contraste */
+    color: #fff;
+    /* Usa a fonte padrao de titulo para os botoes, dando mais destaque */
+    font-family: var(--fonte-titulo);
+    /* Define o tamanho do texto dos botoes */
+    font-size: 18px;
+    /* Adiciona um leve arredondamento nos cantos dos botoes */
+    border-radius: 5px;
+    /* Cria uma transicao suave para as propriedades que mudam no hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botoes_form button:hover{
+    /* Escurece o fundo do botao para indicar que esta interativo */
+    background-color: var(--cor-secundaria-1);
+    /* Adiciona um leve efeito de movimento para cima e aumento de tamanho */
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* RODAPE */
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1 0 auto;
+}
+
+.rodape{
+    background-color: var(--cor-fundo1);
+    font-family: var(--fonte-titulo);
+    width: 100%;
+    clear: both;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.rodape-conteudo{
+    max-width: 1500px;
+    height: 240px;
+    display: grid;
+    grid-template-columns: 300px 1fr 170px;
+    align-items: start;
+    padding: 0 14px;
+    margin: 0 auto;
+}
+
+
+.rodape-logo{
+    padding-top: 0;
+}
+
+.rodape-logo img{
+    width: 300px;
+    height: 240px;
+    object-fit: contain;
+    display: block;
+}
+
+.rodape-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: #000;
+}
+
+.rodape-contato h3{
+    margin: 0;
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #000;
+    margin-top: 15px;
+}
+
+.rodape-contato address{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    margin-top: 70px;
+    font-weight: bolder;
+}
+
+.rodape-contato address a:hover{
+    color: var(--cor-secundaria-1);
+}
+
+.rodape-contato a{
+    color: #000;
+    font-family: var(--fonte-texto);
+    font-size: 25px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+
+
+.redes_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 130px;
+}
+
+
+.rodape-creditos{
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-secundaria-2);
+    padding: 0 15px;
+    text-align: center;
+}
+
+.rodape-creditos p{
+    margin: 0;
+    color: #ffffff;
+    font-family: var(--fonte-titulo);
+    font-size: 21px;
+    line-height: 1;
+}
+
+@media (max-width: 700px){
+    .rodape-conteudo{
+        grid-template-columns: 1fr;
+        gap: 18px;
+        justify-items: center;
+        padding: 22px 15px;
+    }
+
+    .rodape-contato{
+        align-self: auto;
+    }
+
+    .rodape-contato h3{
+        margin-bottom: 18px;
+    }
+
+    .rodape-creditos p{
+        font-size: 15px;
+        line-height: 1.25;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
