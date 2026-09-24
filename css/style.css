@@ -816,7 +816,7 @@ main{
 }
 
 .rodape{
-    background-color: var(--cor-fundo1);
+    background-color: #1e1e1e;
     font-family: var(--fonte-titulo);
     width: 100%;
     clear: both;
@@ -828,10 +828,12 @@ main{
     max-width: 1500px;
     height: 240px;
     display: grid;
-    grid-template-columns: 300px 1fr 170px;
+    grid-template-columns: 300px 0fr 170px;
     align-items: start;
-    padding: 0 14px;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 50px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
 }
 
 
@@ -840,19 +842,38 @@ main{
 }
 
 .rodape-logo img{
-    width: 300px;
-    height: 240px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     display: block;
 }
 
-.rodape-contato{
+.rodape-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-start;
-    text-align: center;
-    color: #000;
+    font-family: var(--fonte-texto);
+   
+}
+
+.rodape-links h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.rodape-links  li{
+    margin: 20px 0 0 0;
+    
+    
+}
+    
+.rodape-links ul li a{
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    color: var(--cor-destaque);
+    font-size: 14px;
 }
 
 .rodape-contato h3{
@@ -901,17 +922,16 @@ main{
     height: 21px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: var(--cor-secundaria-2);
+    justify-content: flex-start;
     padding: 0 15px;
     text-align: center;
 }
 
 .rodape-creditos p{
     margin: 0;
-    color: #ffffff;
+    color: gray;
     font-family: var(--fonte-titulo);
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1;
 }
 

@@ -549,33 +549,73 @@
 
     </main>
     </div>
+    <!-- COMEÇO - RODAPÉ DO SITE -->
+        <footer class="rodape">
+            <!-- COMEÇO - COUNTEÚDO DO RODAPÉ -->
+            <div class="rodape-conteudo site">
 
-    <footer class="rodape">
-        <div class="rodape-conteudo site">
-            <div class="rodape-logo">
-                <img src="assets/logo.img.png" alt="Logo do TechTrioStudio">
+                <!-- PARÁGRAFO E IMAGEM À ESQUERDA -->
+                <div class="rodape-logo">
+                    
+                        <img src="assets/logo-sem-titulo.svg" alt="">
+                    
+                        <p>
+                            Transformando marcas e impulsionando negócios através de engenharia
+                            web premium, design inteligente e otimização de converção.
+                        </p>
+                    
+                
+                </div>
+                
+                <!-- SERVIÇOS -->
+                <div class="rodape-links">
+                    <h3>Serviços</h3>
+                        <ul>
+                            <li><a href="#">Websites Optmizados</a></li>
+                            <li><a href="#">Landing Pages Premium</a></li>
+                            <li><a href="#">Otimização SEO</a></li>
+                            <li><a href="#">Suporte Exclusivo</a></li>
+                        </ul>
+                
+                </div>
+                
+                <!-- AGÊNCIAS -->
+                <div class="rodape-links">
+                    <h3>Agência</h3>
+                    <ul>
+                        <li><a href="">Sobre nós</a></li>
+                        <li><a href="">Nosso Time</a></li>
+                        <li><a href="">Estudo de Casos</a></li>
+                        <li><a href="">Fale Conosco</a></li>
+                    </ul>    
+
+                </div>
+
+                
+
             </div>
+            <!-- FINAL - COUNTEÚDO DO RODAPÉ -->
 
-            <div class="rodape-contato">
-                <h3>Contate-nos</h3>
-                <address>
-                    <a href="tel:+5511988889999">(11)98888-9999</a>
-                    <a href="mailto:techtriostudio@gmail.com">techtriostudio@gmail.com</a>
-                </address>
+            <!-- LINKS FINAIS -->
+            
+            <div>
+
+                <div class="rodape-creditos">
+                    <p>&copy; 2026 - Criado e Desenvolvido por TIPI06 - SENAC SMP</p>
+  
+                </div>
+                
+                <div class="redes_footer">
+                    <ul class="redeSociais">
+                        <li><a href="#"><img src="assets/instagram-24.png" alt="Logo instagram - Tech Trio Studio"></a></li>
+                        <li><a href="#"><img src="assets/linkedin.svg" alt="Logo linkedin - Tech Trio Studio"></a></li>
+                        <li><a href="#"><img src="assets/whatsapp-24.png" alt="Logo whatsApp - Tech Trio Studio"></a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="redes_footer">
-                <ul class="redeSociais">
-                    <li><a href="#"><img src="assets/instagram-24.png" alt="Logo instagram - Tech Trio Studio"></a></li>
-                    <li><a href="#"><img src="assets/whatsapp-24.png" alt="Logo whatsApp - Tech Trio Studio"></a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="rodape-creditos">
-            <p>&copy; 2026 - Criado e Desenvolvido por TIPI06 - SENAC SMP</p>
-        </div>
-    </footer>
+            
+        </footer>
+    <!-- FINAL - RODAPÉ DO SITE -->
 
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
